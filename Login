@@ -1,0 +1,65 @@
+import 'package:flutter/material.dart';
+import 'package:ipplproject/components/MyTextField.dart';
+
+class login extends StatelessWidget {
+  login({super.key});
+
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color(0xFF1565C0),
+            Color(0xFF2196F3),
+            Color(0xFFBBDEFB),
+          ],),),
+          child: Center(
+            child: Column(
+              children:  [
+                SizedBox(height: 60),
+                Icon(
+                  Icons.person_2_rounded,
+                  size: 100,
+                ),
+                SizedBox(height: 50,),
+                Text(
+                  "Selamat Datang Kembali!",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(height: 25),
+
+                MyFieldText(
+                  controller: usernameController,
+                  hinText: 'Email',
+                  obsecureText: false,
+                ),
+
+                 SizedBox(height: 10), 
+
+                 MyFieldText(
+                  controller: passwordController,
+                  hinText: 'Password',
+                  obsecureText: true,
+                 ),
+
+              ],
+            ),
+          ),
+        ),)
+      );
+  }
+}
