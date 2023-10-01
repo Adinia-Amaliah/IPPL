@@ -1,0 +1,74 @@
+import 'package:flutter/material.dart';
+import 'package:ipplproject/Pages/Penjelasan2.dart';
+
+class Penjelasan1 extends StatelessWidget {
+  const Penjelasan1({super.key});
+
+  void _navigateToNextPage(BuildContext context) {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (context) => Penjelasan2(),
+    ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AnatoReality'),
+        centerTitle: true,
+      ),
+      body: Scrollbar(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              SizedBox(height: 20), 
+             Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Text(
+                  'Apa sih organ dalam manusia itu? Sebelum mempelajari apa itu organ dalam manusia, alangkah baiknya jika kita mengetahui apa sih organ itu? Sistem organ pada manusia merupakan sekumpulan organ yang saling mendukung dan bekerja sama agar tubuh tetap berfungsi sebagaimana mestinya. Tahukah kalian, kesehatan tubuh manusia ditentukan oleh baik atau tidaknya fungsi sistem organ tersebut. Setelah mengetahui apa itu organ, selanjutnya kita akan mencari tahu tentang apa itu organ dalam, seperti namanya organ dalam adlah  organ yang terdapat di dalam tubuh contohnya seperti, jantung, paru-paru, hati, dan lain sebagainya.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 18),
+                  ),
+                ),
+                SizedBox(height: 20),
+                    InkWell(
+                onTap: () {
+                  _navigateToNextPage(context); 
+                },
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.arrow_forward),
+                      SizedBox(width: 8),
+                      Text(
+                        'Penjelasan dan Contoh Organ Dalam',
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+               ), 
+            ],
+          ),
+        ), 
+      ),
+    );
+  }
+}
