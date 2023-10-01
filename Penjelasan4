@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+
+class Penjelasan4 extends StatelessWidget {
+  const Penjelasan4({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AnatoReality'),
+        centerTitle: true,
+      ),
+      body: Scrollbar(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      'Cara yang baik untuk mencegah penyakit pada organ dalam adalah sebagi berikut : '
+                       ),
+                    SizedBox(height: 15),
+                    Text(
+                      'Untuk pencernaan beberapa hal berikut dapat kalian lakukan : '
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '1. Perbanyak Konsumsi Makanan Berserat, Makanan berserat merupakan salah satu jenis makanan yang sangat baik dikonsumsi untuk menjaga kesehatan pencernaan. Dengan menerapkan pola makan tinggi serat, sebenarnya tidak hanya pencernaan yang akan menjadi sehat. Beberapa risiko penyakit pun dapat dicegah, seperti diabetes, penyakit jantung koroner, wasir, dan kanker kolorektal.'
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '2. Kunyah Makanan dengan Baik, Mengunyah merupakan salah satu bagian yang paling penting dari pencernaan, tetapi mungkin justru yang paling terlupakan. Mengunyah tidak hanya membantu memecah makanan, tetapi juga merupakan tanda dari kelenjar ludah, lambung, dan usus kecil untuk mulai melepaskan enzim pencernaan.'
+                      ),
+                    SizedBox(height: 15),
+                    Text(
+                      '3. Jangan Terlalu Sering Menggunakan Antasida, Ketika gejala maag atau naiknya asam lambung muncul, mengonsumsi antasida mungkin merupakan salah satu langkah yang akan segera diambil. Antasida adalah jenis obat yang digunakan untuk menetralkan kadar asam di lambung.'
+                      ),
+                   SizedBox(height: 15),
+                    Text(
+                      '4. Rutin Berolahraga dan Hindari Stres, Selain membantu mempertahankan gaya hidup sehat, olahraga juga dapat menyehatkan pencernaan, lho. Aktivitas fisik benar-benar dapat membantu mengurangi masalah pencernaan. Sementara stres di sisi lain dapat memiliki efek negatif pada pencernaan. Jadi, sebisa mungkin, rutinlah berolahraga dan hindari stres.'
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
