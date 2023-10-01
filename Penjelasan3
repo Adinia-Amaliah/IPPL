@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+
+class Penjelasan3 extends StatelessWidget {
+  const Penjelasan3({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AnatoReality'),
+        centerTitle: true,
+      ),
+      body: Scrollbar(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      'Penyakit dalam merupakan kondisi kesehatan yang berhubungan dengan organ-organ bagian dalam. Spesialis yang menangani penyakit dalam disebut sebagai dokter spesialis penyakit dalam atau internis dan internis umum. Penyakit yang digolongkan sebagai penyakit dalam sangat bermacam-macam. Mulai dari infeksi saluran pernafasan, diabetes, hingga penyakit hati, perut, dan kandung empedu.',
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      'Sebelum mengetahui lebih lanjut mengenai penyakit yang dapat menyerang organ dalam manusia, berikut beberapa gejala yang dapat kalian ketahui.',
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '1. Nyeri Dada, Nyeri dada merupakan gejala yang sering diremehkan padahal nyatanya gejala ini bisa menjadi tanda-tanda penyakit jantung. Gejala nyeri dada yang diakibatkan oleh penyakit jantung biasanya menimbulkan perasaan tidak nyaman seperti ditekan, diremas, berat dibagian tengah dada atau bahkan sampai terasa terbakar. Rasa nyeri ini dapat disebabkan oleh tersumbatnya aliran darah dari tubuh ke jantung sehingga patut untuk diperhatikan.',
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '2. Penurunan berat badan, Penurunan berat badan secara drastis tanpa program diet merupakan salah satu gejala penyakit dalam yang Sobat Pintar harus perhatikan. Penurunan berat badan disebut drastis apabila lebih 5% dari total berat badan berkurang selama 6-12 bulan. Apabila gejala ini terjadi, segera periksakan ke dokter karena dapat menjadi tanda terjadinya kanker, diabetes melitus, dan gangguan hormon. '
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '3. Kaki kram , Pada umumnya, kram kaki sering disalah artikan sebagai “kesemutan” yang akan hilang dengan sendirinya. Pada umumnya, kram kaki sering disalah artikan sebagai “kesemutan” yang akan hilang dengan sendirinya. Jika gejala ini terus diabaikan, penyakit tersebut dapat berkembang sampai mematikan jaringan kaki karena tidak mendapatkan oksigen dan zat gizi cukup dari aliran darah.'  
+                   ),
+                   SizedBox(height: 15),
+                    Text(
+                      '4. Kulit kering, Kondisi kulit yang sangat kering sampai mudah terkelupas dapat disebabkan oleh gangguan kelenjar tiroid. Kulit yang sangat kering dapat terjadi karena kekurangan zinc pada dalam tubuh. Apabila mengalami kondisi ini segera konsultasikan dengan dokter spesialis kulit dan biasanya kamu akan diberikan suplemen dan losion. '
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      'Setelah mengetahui gejala-gejala umum yang dapat menjadi tanda akan adanya penyakit dalam, berikut penyakit-penyakit pada organ dalam yang dapat menjangkit manusia. Perlu diingat gejala diatas hanyalah gejala umum yang dapat disebabkan oleh hal lain, jika sudah merasa gejala berlebihan dapat menghubungi dokter.'
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '1. Tuberkulosis, Tuberkulosis merupakan penyakit infeksi pada saluran pernapasan yang disebabkan oleh adanya bakteri Mycobacterium tuberculosis. Penyakit dalam ini juga sangat mudah untuk menular, loh, Sobat Pintar. Tuberkulosis dapat menular melalui udara jika penderita sedang batuk dan dengan menggunakan barang yang sebelumnya dipakai oleh penderita tuberkulosis. Gejala tuberkulosis yang harus kamu perhatikan adalah batuk berdahak selama lebih dari dua minggu, hilangnya nafsu makan, penurunan berat badan secara drastis, berkeringat pada malam hari, dan mudah kelelahan.'
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '2. Stroke, Stroke merupakan penyakit dalam yang sering terjadi di Indonesia. Biasanya stroke terjadi ketika pembuluh darah tersumbat sehingga tidak dapat membawa oksigen dan nutrisi ke otak. Sumbatan yang terjadi dalam pembuluh darah dapat terjadi karena adanya penggumpalan darah atau pembuluh darah yang pecah. Dengan demikian, jaringan sel otak akan mati dan menyebabkan stroke.'
+                    ),
+                    SizedBox(height: 15),
+                    Text(
+                      '3. Diabetes Melitus, Selain Stroke, diabetes juga merupakan penyakit yang tentunya sudah tidak asing bagi Sobat Pintar. Selain disebut sebagai Diabetes Melitus, biasanya orang juga mengenalnya dengan sebutan kencing manis. Penyakit ini diakibatkan karena gangguan pada sekresi insulin yang membuat kadar gula menjadi tinggi di dalam darah. Selain karena pola hidup yang tidak sehat, diabetes juga dapat terjadi karena faktor keturunan. Untuk Sobat Pintar yang memiliki riwayat keluarga diabetes, kamu sangat harus menjaga pola hidup dan harus bijak dalam mengkonsumsi makanan, ya!'
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
