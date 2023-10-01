@@ -1,0 +1,143 @@
+import 'package:flutter/material.dart';
+
+class Penjelasan2 extends StatelessWidget {
+  const Penjelasan2({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AnatoReality'),
+        centerTitle: true,
+      ),
+      body: Scrollbar(
+        child: SingleChildScrollView(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Text(
+                  'Organ Dalam',
+                  textAlign: TextAlign.center, // Menyelaraskan teks ke tengah
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/otak.jpeg', 
+                      width: 120,
+                      height: 120,
+                    ),
+                    SizedBox(width: 16),
+                    Expanded(
+                      child: Text(
+                        'Otak merupakan pusat computer dari semua alat tubuh, yang terletak di dalam rongga tengkorak (cranium) yang dibungkus oleh selaput otak yang kuat. Oleh karena itu otak adalah alat tubuh yang sangat penting. Otak yang beratnya kira? kira tiga pon merupakan organ maha rumit yang sangat berperan penting dalam kehidupan.',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/mata.jpg',
+                      width: 120,
+                      height: 120,
+                    ),
+                    SizedBox(width: 16),
+                    Expanded(
+                      child: Text(
+                        'Mata berfungsi sebagai indera penglihatan utama bagi makhluk hidup, termasuk manusia. Mata digunakan untuk melihat objek atau benda yang ada di sekitar. Mata tak cuma merujuk pada bagian bola mata saja. Ada banyak organ mata bagian dalam sehingga indera penglihatan ini dapat bekerja semestinya.',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/Kerongkongan.jpg',
+                      width: 120,
+                      height: 120,
+                    ),
+                    SizedBox(width: 16),
+                    Expanded(
+                      child: Text(
+                        'Kerongkongan terletak di leher yang berada di antara mulut dan lambung. Dengan adanya kerongkongan, makanan yang telah dihaluskan di mulut jadi lebih mudah ditelan dan dibawa menuju lambung.',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.all(16.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/lambung.jpg',
+                      width: 120,
+                      height: 120,
+                    ),
+                    SizedBox(width: 16),
+                    Expanded(
+                      child: Text(
+                        'Lambung terletak di atas sisi perut bagian kiri dan terhubung dengan usus halus. Beberapa fungsi lambung dalam sistem pencernaan adalah menampung makanan dan minuman, mengolah, dan mendorong makanan ke usus untuk penyerapan makanan lebih lanjut.',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
