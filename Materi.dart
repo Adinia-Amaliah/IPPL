@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ipplproject/Pages/Penjelasan1.dart';
 import 'package:ipplproject/Pages/Penjelasan2.dart';
+import 'package:ipplproject/Pages/Penjelasan3.dart';
+import 'package:ipplproject/Pages/Penjelasan4.dart';
 
 class Materi extends StatelessWidget {
   const Materi({super.key});
@@ -76,6 +78,10 @@ class Materi extends StatelessWidget {
             ),
             Padding(
             padding: EdgeInsets.all(16.0),
+            child : InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Penjelasan3()));
+              },
             child: Container(
               height: 100,
               width: 200,
@@ -99,8 +105,13 @@ class Materi extends StatelessWidget {
                 ],
               ),
             ), ),
+            ),
             Padding(
             padding: EdgeInsets.all(16.0),
+            child : InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Penjelasan4()));
+              },
             child: Container(
               height: 100,
               width: 200,
@@ -123,7 +134,7 @@ class Materi extends StatelessWidget {
                   ),
                 ],
               ),
-            ), ),
+            ),), ),
         ],
       ),
     );
